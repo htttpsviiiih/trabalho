@@ -1,0 +1,45 @@
+
+@media screen and (max-width: 480px) {
+    
+    *{
+        padding: none;
+        border: 0;
+        margin: 0;
+    }
+
+    body{
+        font-family: "Unna", serif;
+       
+    }
+    #splash{  /*centralizando a div*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1; /*controlar a ordem de empilhamento de elementos de uma pagina web, determina a posição de um elemento em relação aos outros*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #splash img{
+        width: 20rem; /* rem = unidade de medida equivalente a uns 16px*/
+
+    }
+
+    @keyframes fadeIn{
+        to{
+            opacity: 1;
+
+        }
+    }
+    .fade-in{
+        opacity: 0;
+        animation: fadeIn 2s ease-in forwards;
+    }
+    
+  }
+
+
